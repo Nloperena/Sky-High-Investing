@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           Skip to content
         </a>
         <NavBar />
-        <main id="main" className="pt-24">
+        <main id="main" className="pt-24 md:pt-24 pb-20 md:pb-0">
           {children}
         </main>
       </body>
