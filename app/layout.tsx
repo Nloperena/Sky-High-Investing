@@ -8,7 +8,7 @@ const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
   variable: '--font-roboto-condensed',
   display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '700'],
 });
 
 const inter = Inter({

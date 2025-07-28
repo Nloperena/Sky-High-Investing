@@ -41,7 +41,7 @@ export default function BuyPage() {
       </div>
 
       <div className="apple-card p-8 mb-16">
-        <h3 className="text-2xl font-builders font-semibold mb-6 text-apple-gray-900">How we can help you BUY A HOME:</h3>
+        <h3 className="text-2xl font-builders font-bold mb-6 text-apple-gray-900">How we can help you BUY A HOME:</h3>
         <ul className="space-y-4">
           {benefits.map((item, index) => (
             <li key={index} className="flex items-start gap-3">
@@ -59,7 +59,7 @@ export default function BuyPage() {
       </div>
 
       <div className="text-center">
-        <h2 className="text-3xl font-builders font-semibold mb-8 text-apple-gray-900">Home Ownership Application</h2>
+        <h2 className="text-3xl font-builders font-bold mb-8 text-apple-gray-900">Home Ownership Application</h2>
         <button
           onClick={() => setIsWizardOpen(true)}
           className="apple-button"

@@ -9,7 +9,7 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-builders font-semibold tracking-tight;
+    @apply font-builders font-bold tracking-tight;
   }
   
   h1 {
@@ -48,11 +48,11 @@
   }
   
   .apple-button {
-    @apply bg-apple-blue-600 hover:bg-apple-blue-700 text-white font-builders font-medium px-6 py-3 rounded-xl shadow-apple hover:shadow-apple-lg transition-all duration-200 transform hover:scale-105;
+    @apply bg-apple-blue-600 hover:bg-apple-blue-700 text-white font-builders font-bold px-6 py-3 rounded-xl shadow-apple hover:shadow-apple-lg transition-all duration-200 transform hover:scale-105;
   }
   
   .apple-button-secondary {
-    @apply bg-apple-gray-100 hover:bg-apple-gray-200 text-apple-gray-900 font-builders font-medium px-6 py-3 rounded-xl shadow-apple hover:shadow-apple-lg transition-all duration-200;
+    @apply bg-apple-gray-100 hover:bg-apple-gray-200 text-apple-gray-900 font-builders font-bold px-6 py-3 rounded-xl shadow-apple hover:shadow-apple-lg transition-all duration-200;
   }
   
   .apple-input {

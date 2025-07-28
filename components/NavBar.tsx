@@ -40,7 +40,7 @@ export const NavBar = () => {
               <Link 
                 key={item.href} 
                 href={item.href} 
-                className="font-builders text-apple-gray-700 hover:text-apple-blue-600 transition-colors duration-200 font-medium"
+                className="font-builders text-apple-gray-700 hover:text-apple-blue-600 transition-colors duration-200 font-bold"
               >
                 {item.label}
               </Link>

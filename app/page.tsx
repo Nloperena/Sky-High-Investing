@@ -170,7 +170,7 @@ export default function Home() {
                 }}
                 className="apple-card p-8 text-center"
               >
-                <h3 className="text-xl font-builders font-semibold text-apple-gray-900">{pillar.title}</h3>
+                <h3 className="text-xl font-builders font-bold text-apple-gray-900">{pillar.title}</h3>
                 <p className="mt-3 text-apple-gray-600">{pillar.description}</p>
               </motion.div>
             ))}
@@ -190,9 +190,9 @@ export default function Home() {
               <Link href={path.href} key={path.title}>
                 <div className="apple-card p-8 hover:shadow-apple-lg transition-all duration-300 h-full flex flex-col group">
                   <path.icon className="text-4xl text-apple-blue-600 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" />
-                  <h3 className="text-xl font-builders font-semibold text-apple-gray-900">{path.title}</h3>
+                  <h3 className="text-xl font-builders font-bold text-apple-gray-900">{path.title}</h3>
                   <p className="mt-3 text-apple-gray-600 flex-grow">{path.description}</p>
-                  <div className="mt-4 text-apple-blue-600 font-builders font-medium flex items-center justify-center gap-2 group-hover:gap-3 transition-all duration-200">
+                  <div className="mt-4 text-apple-blue-600 font-builders font-bold flex items-center justify-center gap-2 group-hover:gap-3 transition-all duration-200">
                     Learn More <FaArrowRight className="text-sm" />
                   </div>
                 </div>
