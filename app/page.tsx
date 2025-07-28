@@ -70,7 +70,7 @@ const clientTestimonials = [
     },
     {
         id: 'than-paul',
-        persona: 'Stars from A&E's "Flip This House"',
+        persona: "Stars from A&E's \"Flip This House\"",
         quote: "Carlos A. Chica & Sky High Investing are committed to providing real estate solutions and improving the community. If you are looking to sell, buy, renovate, or solve any real estate problem look no further.",
         name: 'Than Merrill & Paul Esajian',
         asset: '/img/avatars/than.jpg',
