@@ -134,29 +134,34 @@ export default function Home() {
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-apple-gray-900 via-apple-gray-900/80 to-apple-gray-900/40 z-10"></div>
         <div className="relative z-20 px-4 apple-container">
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', duration: 0.8 }}
-            className="text-gradient font-builders font-bold text-left max-w-4xl"
+            className="text-left max-w-4xl"
           >
-            Buy, Build, Sell homes here.
-          </motion.h1>
+            <h1 className="text-gradient font-builders font-bold text-5xl md:text-6xl lg:text-7xl leading-tight">
+              Buy,<br />
+              Build,<br />
+              Sell Home<br />
+              <span className="text-apple-gray-100">In Florida and New York.</span>
+            </h1>
+          </motion.div>
           <motion.p 
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', duration: 0.8, delay: 0.2 }}
-            className="mt-6 max-w-2xl text-balance text-apple-gray-100 text-left"
+            className="mt-8 max-w-2xl text-balance text-apple-gray-100 text-left text-xl md:text-2xl font-builders"
           >
-            No hype. Just a clear path from your first question to your first closing.
+            Professional architecture, engineering and advice is only one click away
           </motion.p>
           <motion.button 
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', duration: 0.8, delay: 0.4 }}
-            className="apple-button mt-8"
+            className="apple-button mt-8 text-lg px-8 py-4"
           >
-            Plan My First Step
+            Get Started
           </motion.button>
         </div>
       </section>
