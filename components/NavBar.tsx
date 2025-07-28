@@ -28,21 +28,27 @@ export const NavBar = () => {
 
   return (
     <>
-      <header className={clsx('fixed inset-x-0 top-0 z-50 transition-all', scrolled ? 'glass' : '')}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-          <Link href="/" aria-label="Sky High Investing home" className="flex items-center gap-2">
+      <header className={clsx('fixed inset-x-0 top-0 z-50 transition-all duration-300', 
+        scrolled ? 'bg-white/80 backdrop-blur-xl shadow-apple border-b border-apple-gray-200' : 'bg-transparent'
+      )}>
+        <div className="apple-container flex items-center justify-between py-4">
+          <Link href="/" aria-label="Sky High Investing home" className="flex items-center gap-3">
             <Image src="/brand/logo-main.jpg" alt="Sky High Investing logo" width={124} height={62} className="h-12 w-auto object-contain" />
           </Link>
-          <nav className="hidden gap-6 md:flex">
+          <nav className="hidden gap-8 md:flex">
             {NAV_ITEMS.map((item) => (
-              <Link key={item.href} href={item.href} className="text-cloud-white/80 hover:text-cloud-white">
+              <Link 
+                key={item.href} 
+                href={item.href} 
+                className="font-builders text-apple-gray-700 hover:text-apple-blue-600 transition-colors duration-200 font-medium"
+              >
                 {item.label}
               </Link>
             ))}
           </nav>
           <button
             onClick={() => setIsModalOpen(true)}
-            className="rounded-full bg-cloud-white px-6 py-2 text-sm font-semibold text-high-altitude-blue shadow-lg hover:bg-cloud-white/80 transition-colors"
+            className="apple-button text-sm"
           >
             Contact Us
           </button>

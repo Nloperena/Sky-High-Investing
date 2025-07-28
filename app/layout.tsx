@@ -1,13 +1,14 @@
-import { Sora, Inter } from 'next/font/google';
+import { Roboto_Condensed, Inter } from 'next/font/google';
 import './globals.css';
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { ReactNode } from 'react';
 
-const sora = Sora({
+const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
-  variable: '--font-sora',
+  variable: '--font-roboto-condensed',
   display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 const inter = Inter({
@@ -23,8 +24,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable} scroll-smooth`}>
-      <body className="font-sans">
+    <html lang="en" className={`${robotoCondensed.variable} ${inter.variable} scroll-smooth`}>
+      <body className="font-sans antialiased">
         <a href="#main" className="skip-nav">
           Skip to content
         </a>
