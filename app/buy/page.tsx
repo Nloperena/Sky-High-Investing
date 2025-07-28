@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { ContactWizard } from '@/components/ContactWizard';
 
+// Buy page with syntax fix for Credit Challenged quotes
 const benefits = [
     "Get you pre-qualified quickly, and at no cost to you!",
     "Help \"Credit Challenged\" buyers get qualified for a home.",
