@@ -143,7 +143,7 @@ export default function Home() {
             <h1 className="text-gradient font-builders font-bold text-5xl md:text-6xl lg:text-7xl leading-tight">
               Buy,<br />
               Build,<br />
-              Sell Home<br />
+              Sell Homes<br />
               <span className="text-apple-gray-100">In Florida and New York.</span>
             </h1>
           </motion.div>
