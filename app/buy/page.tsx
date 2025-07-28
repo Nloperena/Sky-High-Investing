@@ -57,8 +57,6 @@ export default function BuyPage() {
       </div>
 
       <ContactWizard open={isWizardOpen} onClose={() => setIsWizardOpen(false)} />
-      </div>
-
     </div>
   );
 } 
