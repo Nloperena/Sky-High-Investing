@@ -112,7 +112,7 @@ export default function SolutionsPage() {
             transition={{ type: 'spring', duration: 0.8 }}
             className="text-gradient font-builders font-bold text-4xl md:text-5xl lg:text-6xl mb-6"
           >
-            Build. Buy. Sell.
+            Build. Buy. Sell Homes.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 24 }}
