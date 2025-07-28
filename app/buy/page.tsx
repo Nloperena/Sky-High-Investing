@@ -6,7 +6,7 @@ import { ContactWizard } from '@/components/ContactWizard';
 
 const benefits = [
     "Get you pre-qualified quickly, and at no cost to you!",
-    "Help "Credit Challenged" buyers get qualified for a home.",
+    "Help \"Credit Challenged\" buyers get qualified for a home.",
     "Our network of mortgage brokers, real estate agents, attorneys and other real estate professionals will be your resources as well!",
     "You get a clear-cut, honest transaction with a reputable company you can trust.",
     "We will work hard to make your home buying experience smooth and successful!",
