@@ -1,13 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import { buildMeta } from '@/lib/seo';
-import { MultiStepForm } from '@/components/MultiStepForm';
+'use client';
 
-export const metadata = buildMeta({
-  title: 'Buy a Home | Sky High Investing',
-  description: 'Find and purchase your dream home with our expert guidance.',
-  url: '/buy',
-});
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { ContactWizard } from '@/components/ContactWizard';
 
 const benefits = [
     "Get you pre-qualified quickly, and at no cost to you!",
@@ -18,6 +13,8 @@ const benefits = [
 ];
 
 export default function BuyPage() {
+  const [isWizardOpen, setIsWizardOpen] = useState(false);
+
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-4xl font-bold text-gradient text-center mb-12">We Can Help You Buy a Home!</h1>
@@ -51,7 +48,15 @@ export default function BuyPage() {
 
       <div>
         <h2 className="text-3xl font-semibold text-center mb-8">Home Ownership Application</h2>
-        <MultiStepForm initialPersona="buy" />
+        <button 
+          onClick={() => setIsWizardOpen(true)}
+          className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+        >
+          Start Your Application
+        </button>
+      </div>
+
+      <ContactWizard open={isWizardOpen} onClose={() => setIsWizardOpen(false)} />
       </div>
 
     </div>
