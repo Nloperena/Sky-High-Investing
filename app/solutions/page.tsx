@@ -1,9 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { staggerChildren } from '@/lib/animations';
 import { FaHammer, FaHome, FaHandshake, FaCheckCircle, FaUsers, FaChartLine, FaShieldAlt, FaLightbulb } from 'react-icons/fa';
+import { ContactWizard } from '@/components/ContactWizard';
 
 const buildingServices = [
   {
@@ -98,6 +99,8 @@ const processSteps = [
 ];
 
 export default function SolutionsPage() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   return (
     <div className="space-y-32">
       {/* Hero Section */}
@@ -318,8 +321,11 @@ export default function SolutionsPage() {
             Let's discuss your project and find the perfect solution for your real estate goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="apple-button text-lg px-8 py-4">
-              Schedule Consultation
+            <button 
+              onClick={() => setIsContactModalOpen(true)}
+              className="apple-button text-lg px-8 py-4"
+            >
+              Get Started
             </button>
             <button className="apple-button-secondary text-lg px-8 py-4">
               View Our Portfolio
@@ -327,6 +333,8 @@ export default function SolutionsPage() {
           </div>
         </div>
       </section>
+
+      <ContactWizard open={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </div>
   );
 } 
