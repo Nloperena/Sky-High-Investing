@@ -121,7 +121,7 @@ export default function Home() {
   return (
     <div className="space-y-32">
       {/* Hero */}
-      <section className="relative flex min-h-[80dvh] flex-col items-center justify-center text-center overflow-hidden">
+      <section className="relative flex min-h-[80dvh] flex-col items-start justify-center overflow-hidden">
         <video
           autoPlay
           loop
@@ -132,21 +132,21 @@ export default function Home() {
           <source src="https://videos.ctfassets.net/3oo3h6xy6p0k/2lT5pRSCjJoAULMT2fHyGh/708a940071fcd4a9d6c3c813835daa45/Untitled.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-apple-gray-900 opacity-70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-apple-gray-900 via-apple-gray-900/80 to-apple-gray-900/40 z-10"></div>
         <div className="relative z-20 px-4 apple-container">
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', duration: 0.8 }}
-            className="text-gradient font-builders font-bold"
+            className="text-gradient font-builders font-bold text-left max-w-4xl"
           >
-            Transparent tools and guidance for long-term property growth.
+            Buy, Build, Sell homes here.
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', duration: 0.8, delay: 0.2 }}
-            className="mt-6 max-w-2xl mx-auto text-balance text-apple-gray-100"
+            className="mt-6 max-w-2xl text-balance text-apple-gray-100 text-left"
           >
             No hype. Just a clear path from your first question to your first closing.
           </motion.p>
@@ -213,10 +213,10 @@ export default function Home() {
       </section>
 
       {/* Social Proof Section */}
-      <section className="apple-section">
+      <section className="apple-section bg-apple-gray-900">
         <div className="apple-container text-center">
           <h2 className="text-gradient font-builders font-bold">Hear From Our Clients</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-apple-gray-600">
+          <p className="mt-4 max-w-2xl mx-auto text-apple-gray-300">
             We've helped hundreds of people achieve their real estate goals.
           </p>
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
