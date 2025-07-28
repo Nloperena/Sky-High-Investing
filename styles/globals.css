@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand CSS custom properties */
+:root {
+  --brand-primary: #005fcc;
+  --brand-accent: #00bfff;
+}
+
+/* Reusable gradient text */
+.text-gradient {
+  background: linear-gradient(90deg,var(--brand-primary),var(--brand-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ensure glass class contrast in dark mode - now light mode */
+.glass {
+    background: rgba(255, 255, 255, 0.45); /* More opaque white */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1); /* Lighter shadow */
+  }
+
+.glass-solid {
+  background: rgba(255,255,255,0.7);
+}
+
+.dark .glass {
+  /* Keep a dark variant if needed later */
+  background: rgba(20,20,20,0.4);
+  border-color: rgba(255,255,255,0.1);
+}
+
+/* Skip nav link for accessibility */
+.skip-nav {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #fff; /* White background */
+  color: #000; /* Black text */
+  padding: 8px 16px;
+  z-index: 100;
+}
+
+.skip-nav:focus {
+  top: 0;
+}
+
+.gradient-heading {
+  @apply text-gradient font-extrabold;
+} 

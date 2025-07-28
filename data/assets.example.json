@@ -1,0 +1,23 @@
+{
+  "logo": {
+    "primary_svg": "/brand/logo-main.jpg",
+    "light_version_svg": "/brand/logo-main.jpg",
+    "fallback_png": "/brand/logo-main.jpg",
+    "alt": "Sky High Investing logo"
+  },
+  "colorTokens": {
+    "brandPrimary": "#007BFF",
+    "brandAccent": "#00BFFF",
+    "brandGradient": "linear-gradient(90deg,#007BFF,#00BFFF)"
+  },
+  "videos": [],
+  "testimonials": [],
+  "leadMagnet": {
+    "title": "Passive Income Starter Pack",
+    "assets": [
+      "/media/lead-magnet/cover.png",
+      "/media/lead-magnet/checklist.pdf"
+    ],
+    "description": "10-page guide + 10-min video + first deal checklist."
+  }
+} 
